@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQM Form</title>
+
+	<!-- FIXED: "divice-width" typo corrected to "device-width" -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FIXED: Moved CSS to head and used valid CDN link (Version 1.4.5) -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+	<!-- FIXED: Used valid jQuery 1.11.1 CDN -->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!-- FIXED: Used valid jQuery Mobile 1.4.5 CDN -->
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-position="fixed">
+			<a href="index.html" target="_self" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+			<h1>jQM Form Controls</h1>
+		</div><!--/header-->
+
+		<div role="main" class="ui-content">
+			<h2>Form Element</h2>
+			<form>
+				<label for="textinput"> Text input: data-clear-btn="true"</label>
+				<!-- FIXED: Missing equal sign (type"text" -> type="text") -->
+				<input type="text" data-clear-btn="true" name="textinput" id="textinput" value="">
+				
+				<la4bel for="textarea-1">Textarea:</label>
+				<textarea name="textarea-1" id="textarea-1"></textarea>
+				
+				<label for="number-2">Number: data-clear-btn="true"</label>
+				<input type="number" data-clear-btn="true" name="number-2" id="number-2" value="">
+				
+				<label for="date-2">Date: data-clear-btn="true"</label>
+				<input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+				
+				<label for="password-2">Password: data-clear-btn="true"</label>
+				<input type="password" data-clear-btn="true" name="password-2" id="password-2" value="">
+				
+				<label for="flip-checkbox-1">Flip toggle switch checkbox:</label>
+				<!-- FIXED: Added data-role="flipswitch" to make it look like a switch -->
+				<input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+				
+				<div class="ui-field-contain">
+					<label for="select-native-1">Select box/menu:</label>
+					<select name="select-native-1" id="select-native-1">
+						<option value="1">The 1st Option</option>
+						<option value="2">The 2nd Option</option>
+						<option value="3">The 3rd Option</option>
+						<option value="4">The 4th Option</option>
+					</select>
+				</div>
+
+				<fieldset data-role="controlgroup">
+					<legend>Choose your gender:</legend>
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="male" value="male">
+					
+					<label for="female">Female</label>
+					<!-- FIXED: ID cannot be "male" again. Changed to "female". -->
+					<input type="radio" name="gender" id="female" value="female">
+				</fieldset>
+
+				<fieldset data-role="controlgroup">
+					<!-- FIXED: Typo "fovorite" -> "favorite" -->
+					<legend>Choose as many favorite colors as you'd like:</legend>
+					<label for="red">Red</label>
+					<input type="checkbox" name="favcolor" id="red" value="red">
+					
+					<label for="green">Green</label>
+					<input type="checkbox" name="favcolor" id="green" value="green">
+					
+					<label for="blue">Blue</label>
+					<input type="checkbox" name="favcolor" id="blue" value="blue">
+				</fieldset>
+
+				<input type="button" value="Button">
+				<input type="reset" value="Reset Button">		
+				<input type="submit" value="Submit Button">
+			</form>
+		</div><!--/content-->
+
+		<div data-role="footer" data-position="fixed">
+			<h1>[JOHN PAUL]</h1>
+		</div><!--/footer-->
+	</div><!--/page1-->
+</body>
+</html>

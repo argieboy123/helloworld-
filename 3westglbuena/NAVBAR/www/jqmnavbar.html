@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Listview</title>
+	<!-- FIX: Added Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FIX: Added jQuery Mobile CSS and JS libraries -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	
+	<!-- PAGE 1 -->
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<!-- Link back to external index file needs explicit ajax="false" or rel="external" usually, 
+			     but standard href works in modern browsers often. Adding external for safety. -->
+			<a href="index.html" rel="external" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+			<h1>Navbar</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active ui-state-persist"> Home </a></li>
+					<!-- FIX: Changed href="#page3" to "#page2" because page3 does not exist -->
+					<li><a href="#page2" data-icon="camera">Camera</a></li>
+				</ul>
+			</div>
+		</div><!--/header-->
+
+		<div role="main" class="ui-content">
+			<h2>Page 1 </h2>
+			<p> Your Content Here </p>
+		</div><!--/content-->
+
+		<div data-role="footer" data-position="fixed">
+			<h1>Footer Inline </h1>
+		</div><!--/footer-->
+	</div><!--/page1-->
+
+
+	<!-- PAGE 2 -->
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<h1>Navbar</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home"> Home </a></li>
+					<li><a href="#" data-icon="camera" class="ui-btn-active ui-state-persist">Camera</a></li>
+				</ul>
+			</div>
+		</div><!--/header-->
+
+		<div role="main" class="ui-content">
+			<h2>Page 2 </h2>
+			<p> Your Content Here </p>
+		</div><!--/content-->
+
+		<div data-role="footer" data-position="fixed">
+			<h1>Footer Inline </h1>
+		</div><!--/footer-->
+	</div><!--/page2 (FIX: Comment was closing page1)--> 
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<widget xmlns = "htttps://www.w3.org/ns/widgets"
+	xmlns:gap = "https://phonegap.com/ns/1.0"
+	id	= "com.phonegap.first"
+	versionCode="1"
+	version   ="1.0">
+	
+	<name> jQM Form</name>
+
+	<description>
+		jQM Form
+	</description>
+	<author href="google.com" email="test@gmail.com">
+		BSIT MADRIDEJOS COMMUNITY COLLEGE
+	</author>
+
+	<icon src="icon.png"/>
+	
+	<platform name="ios" />
+	<platform name="android"/>
+	<platform name="winphone"/>
+
+	<preference name="phonegap-version" value="cli-6.5.0"/>
+
+</widget>
+

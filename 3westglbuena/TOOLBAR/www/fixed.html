@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Toolbar Fixed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Added jQuery Mobile CSS and JS -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header" data-position="fixed">
+		<a href="index.html" target="_self" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+		<h1>Header Fixed</h1>
+	</div><!--/header-->
+	
+	<div role="main" class="ui-content">
+		<h2>Introduction</h2>
+		
+		<p>jQuery Mobile is a user interface framework based on jQuery that works across all popular phones, tablets, e-readers, and desktop platforms.
+		Built with accessibility and universal access in mind, we follow progressive enhancement and responsive web design (RWD) principles. HTML5 Markup-driven configuration makes
+		it easy to learn, but a powerful API makes it possible to deeply customize the library.</p>
+		
+		<p>A page in jQuery Mobile consists of an element with a data-role="page" attribute. Within the "page"
+		container, any valid HTML markup can be used, but for typical pages in jQuery Mobile, the immediate children of a "page" are divs with data-role="header", class="ui-content",
+		and data-role="footer". The baseline requirement for a page is only the page wrapper to support the navigation system, the rest is optional.</p>
+		
+		<p>A page can be styled as a dialog that makes the page look like it's a modal style overlay. 
+		To give a standard page the appearance of a modal dialog, add the data-rel="dialog" attribute to the link. Transitions can also be set on dialog links.</p>
+		
+	</div><!--/content-->
+	
+	<div data-role="footer" data-position="fixed">
+		<h1>Footer Fixed</h1>
+	</div><!--/footer-->
+</div><!--/page1-->
+</body>
+</html>

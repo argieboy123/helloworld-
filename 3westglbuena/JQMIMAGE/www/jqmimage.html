@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Popup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- ADDED JQUERY MOBILE LIBRARIES -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page">
+
+		<div data-role="header" data-position ="fixed">
+		  <!-- Fixed Back Link -->
+		  <a href="index.html" target="_self" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+			<h1>JQM Popup</h1>
+		</div><!--header-->
+
+		<div role="main" class="ui-content">
+		  <h2>Popup Image</h2>
+		  
+		  <!-- 1. Juniel -->
+		  <!-- Fixed: data-position-to="window" and removed semicolon from height/width attributes -->
+		  <a href="#popupjuniel" data-rel="popup" data-position-to="window" data-transition="fade">
+			<img src="images/juniel.jpg" height="100px" width="100px" alt="Juniel">
+		  </a>
+		  
+		  <div data-role="popup" id="popupjuniel" data-overlay-theme="b" data-corners="false">
+			  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			  <!-- Fixed: Moved 'alt' out of 'style' attribute -->
+			  <img class="popphoto" src="images/juniel.jpg" style="max-height: 512px;" alt="Juniel">
+		  </div>
+		  
+		  <!-- 2. Anime -->
+		  <a href="#popupanime" data-rel="popup" data-position-to="window" data-transition="fade">
+			<img src="images/anime.jpeg" height="100px" width="100px" alt="zero two">
+		  </a>
+		  
+		  <div data-role="popup" id="popupanime" data-overlay-theme="b" data-corners="false">
+			   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			   <img class="popphoto" src="images/anime.jpeg" style="max-height: 512px;" alt="zero two">
+		  </div>
+		  
+		  <!-- 3. Family -->
+		  <a href="#popupfampic" data-rel="popup" data-position-to="window" data-transition="fade">
+			<img src="images/fampic.jpg" height="100px" width="100px" alt="family picture">
+		  </a>
+		  
+		  <div data-role="popup" id="popupfampic" data-overlay-theme="b" data-corners="false">
+			   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			   <img class="popphoto" src="images/fampic.jpg" style="max-height: 512px;" alt="family picture">
+		  </div>
+		  
+		  <!-- 4. HighSchool -->
+		  <a href="#popuphigh1" data-rel="popup" data-position-to="window" data-transition="fade">
+			<img src="images/high1.jpg" height="100px" width="100px" alt="highschool">
+		  </a>
+		  
+		  <div data-role="popup" id="popuphigh1" data-overlay-theme="b" data-corners="false">
+			   <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			   <img class="popphoto" src="images/high1.jpg" style="max-height: 512px;" alt="highschool">
+		  </div>
+
+		</div><!--/content-->
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Mobile Application Development</h4>
+		</div><!--/footer-->
+			
+	</div><!--/page1-->
+</body>
+</html>

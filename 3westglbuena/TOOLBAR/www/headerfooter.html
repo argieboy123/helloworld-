@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Header/Footer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Added jQuery Mobile CSS and JS -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<style id="footer-abs-buttons">
+		.footer-button-left,
+		.footer-button-right {
+			position: absolute;
+			margin: 0;
+			top: auto;
+			bottom: 0.24em;
+		}
+		.footer-button-left {
+			left: 0.4em;
+		}
+		.footer-button-right {
+			right: 0.4em;
+		}
+	</style>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<a href="index.html" target="_self" class="ui-btn ui-btn-left ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+		<h1>Header</h1>
+		<a href="#" class="ui-btn ui-btn-right ui-corner-all ui-icon-grid ui-btn-icon-left">Menu</a>
+	</div><!--/header-->
+	
+	<div role="main" class="ui-content">
+		<p>jQM Toolbar (Header/Footer)</p>
+	</div><!--/content-->
+	
+	<div data-role="footer" data-position="fixed">
+		<h1>Footer</h1>
+		<a href="#" class="ui-btn ui-corner-all footer-button-left ui-btn-icon-left ui-icon-arrow-l">Previous</a>
+		<a href="#" class="ui-btn ui-corner-all footer-button-right ui-btn-icon-right ui-icon-arrow-r">Next</a>
+	</div><!--/footer-->
+</div><!--/page1-->
+</body>
+</html>

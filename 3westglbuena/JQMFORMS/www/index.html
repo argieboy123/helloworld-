@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+
+	<!-- FIXED: "divice-width" changed to "device-width" -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FIXED: Moved CSS to <head>. Replaced non-existent version 2.4.5 with stable 1.4.5 -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+	<!-- Your custom CSS -->
+	<link rel="stylesheet" href="style.css"/>
+
+	<!-- FIXED: Replaced "jquerys.js" with standard jQuery 1.11.1 -->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!-- FIXED: Replaced "jquerys.mobile" with standard jQuery Mobile 1.4.5 -->
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- ADDED: Script to handle the closeApp() function -->
+	<script>
+		function closeApp() {
+			// This works if wrapped in PhoneGap/Cordova
+			if (navigator.app) {
+				navigator.app.exitApp();
+			} else if (navigator.device) {
+				navigator.device.exitApp();
+			} else {
+				// Fallback for standard browsers
+				console.log("Close app clicked");
+				alert("App close requested (Note: Scripts cannot close windows they didn't open)");
+			}
+		}
+	</script>
+</head>
+<body>
+
+<div data-role="page">
+	<div data-role="header">
+		<h1>jQuery Mobile Forms</h1>
+	</div><!--/header-->
+
+	<div role="main" class="ui-content">
+		<p>jQuery Mobile Forms</p>
+		
+		<a href="jqmform.html" target="_self" class="ui-btn"><b>JQM Forms</b></a>
+		
+		<!-- FIXED: Cleaned up spacing -->
+		<a href="#popupCloseRight" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-b" data-transition="pop">Exit Button</a>
+		
+		
+		<div data-role="popup"\ id="popupCloseRight" class="ui-content">
+			<p id="ms">Are you sure you want to close the app?</p>
+			<!-- This calls the javascript function defined in head -->
+			<a href="#" onclick="closeApp()" data-role="button" data-theme="a">Yes</a>
+			<a href="#" data-rel="back" data-role="button" data-theme="b">No</a>
+		</div>
+	</div><!--/content-->
+
+	<div data-role="footer" data-position="fixed">
+		<h4> Free Elective 2</h4>
+	</div><!--/footer-->
+</div><!--/page1-->
+
+</body>
+</html>

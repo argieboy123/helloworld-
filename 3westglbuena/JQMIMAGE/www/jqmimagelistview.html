@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Listview</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- ADDED JQUERY MOBILE LIBRARIES -->
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page">
+
+		<div data-role="header" data-position ="fixed">
+		  <a href="index.html" target="_self" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Back</a>
+			<h1>JQM Listview</h1>
+		</div><!--header-->
+
+		<div role="main" class="ui-content">
+			<h2>Listview Thumbnail</h2>
+			
+			<!-- Merged items into one UL for correct styling -->
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#popupjuniel" data-rel="popup" data-position-to="window" data-transition="fade">
+						<img src="images/juniel.jpg">
+						<h2> Juniel Marfa</h2>
+						<p> IT Student</p>
+					</a>
+				</li>
+				<li>
+					<a href="#popupfampic" data-rel="popup" data-position-to="window" data-transition="fade">
+						<img src="images/fampic.jpg">
+						<h2> Family Picture</h2>
+						<p> This Picture Captured at Madridejos Cultural</p>
+					</a>
+				</li>
+			</ul>
+				 
+			<!-- Popups defined outside the UL -->
+			<div data-role="popup" id="popupjuniel" data-overlay-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img class="popupphoto" src="images/juniel.jpg" style="max-height: 512px;" alt="Juniel">
+			</div>
+				
+			<div data-role="popup" id="popupfampic" data-overlay-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img class="popupphoto" src="images/fampic.jpg" style="max-height: 512px;" alt="Family">
+			</div>
+					
+		</div><!--/content-->
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>JOHN PAUL</h4>
+		</div><!---/footer-->
+					
+	</div><!---/page1-->
+		
+</body>
+</html>
